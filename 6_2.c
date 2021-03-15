@@ -4,6 +4,7 @@ int main()
     int n,k=0,j=0;
     scanf("%d",&n);
     char num[n],num1[n];
+
     if(n>=4&&n<=9)
     {
         scanf("%s",num);
@@ -25,11 +26,13 @@ int main()
         }
         else
         {
-            printf("Error\n");
+            printf("Error");
             break;
         }
     }
-    if(k>0)
+    if(k>0||j>0)
         printf("%d %d",k,j);
+
+    return 0;
 
 }
